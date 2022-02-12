@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-6">
+        <h1 class="text-5xl text-center">Get some <span class="text-red-500">Money</span></h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class=" bg-green-600 rounded p-4">
+                    <h2 class="text-3xl">Deposite</h2>
+                    <h2 class="text-4xl">$<span id="deposite-value">00</span></h2>
+                </div>
+                <div class=" bg-pink-600 rounded p-4">
+                    <h2 class="text-3xl">Withdrow</h2>
+                    <h2 class="text-4xl">$<span id="withdrow-value">00</span></h2>
+                </div>
+                <div class=" bg-sky-600 rounded p-4">
+                    <h2 class="text-3xl">Balance</h2>
+                    <h2 class="text-4xl">$<span id="total-balance">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <div class="grid grid-cols-2 gap-6 w-3/4 mx-auto">
+                <div class="bg-red-100 p-6 rounded">
+                    <h3 class="text-3xl text-center">Please Deposite</h3>
+                    <div>
+                        <input id="deposite-amount" class="block mx-auto m-4 p-2 border-2 rounded border-gray-600 w-3/4"
+                            type="text" placeholder="$ amount for deposite">
+                        <button onclick="depositeButton()"
+                            class="block mx-auto bg-gray-500 text-white px-4 p-1 rounded font-semibold">Deposite</button>
+                    </div>
+                </div>
+                <div class="bg-blue-100 p-6 rounded">
+                    <h3 class="text-3xl text-center">Please Withdrow</h3>
+                    <div>
+                        <input id="withdrow-amount" class="block mx-auto m-4 p-2 border-2 rounded border-gray-600 w-3/4"
+                            type="text" placeholder="$ amount for withdrow">
+                        <button onclick="withdrowButton()"
+                            class="block mx-auto bg-gray-500 text-white px-4 p-1 rounded font-semibold">Withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
